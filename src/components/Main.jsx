@@ -45,6 +45,10 @@ export default function Main() {
                     <h1 className="card-title">Learn Web Development</h1>
                 </div>
                 <div className="card-body">
+                    {
+                        buttonsList.map((button) => (
+                            <button key={button.id} type={button.type} className={button.className}>{button.text}</button>))
+                    }
                     {/* 
                     <button type="button" class="btn btn-success">HTML</button>
                     <button type="button" class="btn btn-success">CSS</button>
