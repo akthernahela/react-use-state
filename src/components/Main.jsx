@@ -45,9 +45,9 @@ export default function Main() {
             description: "ReactJS è una libreria JavaScript per costruire interfacce utente, in particolare applicazioni a pagina singola. Consente agli sviluppatori di creare componenti UI riutilizzabili e di gestire efficacemente lo stato dell'applicazione."
         }
     ];
-    const [count, setCount] = useState(0);
+    const [selectButton, setselectButton] = useState(0);
     const handleClick = (button) => {
-        setCount(button);
+        setselectButton(button);
     };
     return (
         <main>
@@ -59,7 +59,7 @@ export default function Main() {
                     {
                         buttonsList.map((button) => (
                             <button key={button.id} type={button.type}
-                                className={`${button.className} m-3 btn-lg  ${count && count.id === button.id ? 'active' : ''}`}
+                                className={`${button.className} m-3 btn-lg  ${selectButton && selectButton.id === button.id ? 'active' : ''}`}
                                 onClick={() => handleClick(button)}>{button.text}</button>))
                     }
                     {/* 
@@ -70,9 +70,9 @@ export default function Main() {
                     <button type="button" class="btn btn-light">EXPRESS</button>
                     <button type="button" class="btn btn-light">REACT</button> 
                     */}
-                    <h2 className="mb-2">{count.text}</h2>
+                    <h2 className="mb-2">{selectButton.text}</h2>
                     <p className="card-text lead">
-                        {count.description}
+                        {selectButton.description}
                     </p>
                 </div>
             </div>
