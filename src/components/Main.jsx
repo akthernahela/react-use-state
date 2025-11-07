@@ -45,6 +45,7 @@ export default function Main() {
             description: "ReactJS è una libreria JavaScript per costruire interfacce utente, in particolare applicazioni a pagina singola. Consente agli sviluppatori di creare componenti UI riutilizzabili e di gestire efficacemente lo stato dell'applicazione."
         }
     ];
+    const [count, setCount] = useState(0);
 
     return (
         <main>
