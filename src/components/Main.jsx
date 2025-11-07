@@ -46,7 +46,9 @@ export default function Main() {
         }
     ];
     const [count, setCount] = useState(0);
-
+    const handleClick = (button) => {
+        setCount(button);
+    };
     return (
         <main>
             <div className="card">
