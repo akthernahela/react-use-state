@@ -70,6 +70,10 @@ export default function Main() {
                     <button type="button" class="btn btn-success">EXPRESS</button>
                     <button type="button" class="btn btn-success">REACT</button> 
                     */}
+                    <h2 className="mb-2">{count.text}</h2>
+                    <p className="card-text lead">
+                        {count.description}
+                    </p>
                 </div>
             </div>
         </main>
