@@ -47,7 +47,7 @@ export default function Main() {
                 <div className="card-body">
                     {
                         buttonsList.map((button) => (
-                            <button key={button.id} type={button.type} className={button.className}>{button.text}</button>))
+                            <button key={button.id} type={button.type} className={`${button.className} m-3 btn-lg`}>{button.text}</button>))
                     }
                     {/* 
                     <button type="button" class="btn btn-success">HTML</button>
